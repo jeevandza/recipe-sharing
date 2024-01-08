@@ -40,3 +40,32 @@ type Address {
   state  String
   zip    String
 }
+
+
+
+model FoodRecipe {
+  id String   @id @default(auto()) @map("_id") @db.ObjectId
+  strMeal String
+  strDrinkAlternate String
+  strCategory String
+  strArea String
+  strInstructions String
+  strMealThumb String
+  strTags String
+  strYoutube String
+  strIngredient1 String
+  strImageSource String
+  strCreativeCommonsConfirmed String
+  dateModified DateTime @default(now())
+  updatedAt DateTime @default(now())
+  createdAt DateTime @updatedAt
+}
+
+
+
+model ContactUs {
+    id String   @id @default(auto()) @map("_id") @db.ObjectId
+    name String
+    email String
+    message String
+}
