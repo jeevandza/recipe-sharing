@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .border-blue-500 {
+    border-color: #3b82f6;
+  }
+  
+  .rounded-full {
+    border-radius: 9999px;
+  }
+  
+  .border-t-4, .border-b-4 {
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
